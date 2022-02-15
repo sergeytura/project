@@ -1,6 +1,17 @@
-const isEven = num => num % 2 === 0;
-const increaseNum = 1;
-const num = 6;
-const result = isEven(increaseNum(num) + 1) ? num + 1 : 1 - num;
+'use strict';
+const numberOfFilms = +prompt(`Сколько фильмов вы уже посмотрели?`,``);
 
-console.log(result);
+const personalMovieDB = {
+    count: numberOfFilms,
+    movies: {},
+    actors: {},
+    genres: [],
+    privat: false
+};
+
+const lastMovie = prompt(`Один из последних просмотренных фильмов?`,``);
+const yourMovieScore = prompt(`На сколько оцените его?`);
+
+personalMovieDB.movies[lastMovie] = yourMovieScore;
+
+console.log(personalMovieDB);
