@@ -15,3 +15,20 @@
 // Классика, Рок-н-ролл
 // Рэп, Регги, Классика, Рок-н-ролл
 
+const styles = [`Джаз`, `Блюз`];
+console.log(styles);
+
+styles.push('Рок-н-ролл');
+console.log(styles);
+
+function swapMidArray () {
+    let swap = Math.ceil(styles.length/2 - 1);
+    styles[swap] = `Классика`;
+}
+
+swapMidArray ();
+console.log(styles);
+styles.shift();
+console.log(styles);
+styles.unshift(`Рэп`,`Регги`);
+console.log(styles);
