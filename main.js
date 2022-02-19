@@ -69,3 +69,5 @@ function showMyDB () {
 
 showMyDB();
 
+//обучение JS
+
