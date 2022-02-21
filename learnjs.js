@@ -59,3 +59,29 @@
 // }
 // sumInput();
 
+// ___________________________________________________
+
+// Бинарный поиск
+
+// const myMassive = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+
+// function binarySearch (massive, goal) {
+//     let low = 0;
+//     let high = massive.length - 1;
+//     let nothing = -1;
+//     let middle = Math.floor((low+high)/2);
+//     while (low <= high) {
+//       if (middle == goal) {
+//         return middle;
+//       }else if (middle > goal) {
+//           low = middle + 1;
+//       }else{
+//           high = middle - 1;
+//       }
+//     }
+//     return nothing;
+// }
+
+// binarySearch(myMassive,5);
+
+
