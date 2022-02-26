@@ -84,4 +84,13 @@
 
 // binarySearch(myMassive,5);
 
-
+const massive = [-1, 2, 3, 7, 10];
+let score;
+for (let i = 0; i < massive.length; i++) {
+    for (let j = i+1 ; j < massive.length; j++) {
+        if (massive[i] + massive[j] == 9) {
+            score = massive[i] + massive[j];
+        }
+    }
+}
+console.log(score);
